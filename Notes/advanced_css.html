@@ -1,0 +1,46 @@
+<!--6th AK Advanced CSS Notes-->
+<DOCTYPE html>
+    <html lang ="en">
+        <head>
+            <tittle>Advanced HTML Notes</tittle>
+            <meta charset="UTF--8">
+            <title>advanced css</title>
+            <style>
+                img{
+                    height: 150px;
+                    width: auto;
+                }
+                #left{
+                    width: 50vw;
+                    margin-right: 3px;
+                }
+                #right{
+                    width: 50vw;
+                    margin-left: 3px;
+                }
+                #content-wrapper{
+                    display:grid;
+                    grid-template-columns: 25% 75%;
+                    grid-template-columns: 1fr 2fr;
+                }
+                #one-wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Title</h1>
+            <div id="content-wrapper"></div>
+            <div id="left">
+            <p>paragraph</p>
+        </div>
+        <div id="right">
+            <div id="one-wrapper">
+            <img id= "one" src = "https://www.lefayresorts.com/magazine/wp-content/uploads/2021/02/neve-terapia.jpg" alt="Snowy landscape" />
+        </div>
+        </div>
+        </body>
+    </html>
