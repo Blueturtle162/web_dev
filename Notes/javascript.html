@@ -1,0 +1,38 @@
+<!--6th AK Javascript Notes-->
+<DOCTYPE html>
+    <html lang ="en">
+        <head>
+            <tittle>Advanced HTML Notes</tittle>
+            <meta charset="UTF--8">
+            <style>
+                #hidden{
+                    display: none;
+                }
+            </style>
+            <script>
+                showing="none"
+                function show(){
+                    if(showing=="none"){
+                    document.getElementById("hidden").style.display="block"
+                    showing = "block"
+                    document.getElementById("button").innerHTML = "Show Less"
+                }else{
+                    document.getElementById("hidden").style.display= "none"
+                    showing = "none"
+                    document.getElementById("button").innerHTML = "Show More"
+                }
+                function change(){
+                document.getElementById("three").src = "https://images.everydayhealth.com/images/seo-graphic-content-initiative/select-eh-how-lupus-affects-the-body.png?sfvrsn=c13950d2_3"
+            }
+            }
+                
+            </script>
+            </head>
+            <body>
+                <div id="hidden">
+                <p>paragraph</p>
+                </div>
+                <button id= "button" onmouseclick=(show)> show more </button>
+                <img id = "three" onmouseover= (change) src = "https://www.lefayresorts.com/magazine/wp-content/uploads/2021/02/neve-terapia.jpg" alt="Snowy landscape" height = "100px"/>
+            </body>
+        </html>
