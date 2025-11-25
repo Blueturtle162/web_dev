@@ -1,0 +1,93 @@
+<!--6th AK Finishing First Web Page-->
+<!DOCTYPE html5>
+<html lang="en">
+    <head>
+        <meta charset="UTF--8">
+       <title>Lupus</title>
+       <style>
+        #first_image{
+            width:30vw;
+            height:45vh;
+            padding:5px;
+        }
+        #second_image{
+            width:30vw;
+            height:45vh;
+            padding:5px;
+        }
+        h1{
+            text-align:center;
+        }
+        body{
+            color:rgb(71, 71, 71);
+            background-color: #b2cfda;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #image{
+            margin: 5px;
+            padding: 5px;
+        }
+        #text{
+            margin: 5px;
+            padding: 5px;
+        }
+        #main{
+            display:grid;
+            grid-template-columns: 50% 50%;
+        }
+        #button{
+            
+            width: 200px;
+            height: 50px;
+        }
+        #more_info{
+            display:none;
+        }
+        </style>
+        <script>
+                function show(){
+                    if(more_info.style.display ==="none"){
+                    more_info.style.display="block";
+                    document.getElementById("button").innerHTML = "Show Less";
+                }else{
+                    document.getElementById("more_info").style.display= "none";
+                    document.getElementById("button").innerHTML = "Show More";
+                }
+            }
+       </script>
+    
+      
+    </head>
+    <body>
+        
+        <h1>Lupus</h1>
+        <div id="main">
+        <div id="text">
+        <h2>Description</h2>
+        <p>Lupus is an autoimmune condition that causes the immune system to attack itself. It can cause damage to major organs, tissue, skin, joints and blood cells. There is currently no cure for lupus but there are various treatments. Lupus can be caused by a variety of factors but most people contract lupus because of their genetics or environmental factors like smoking and certain medications.</p>
+        <h2>Signs and Symptoms</h2>
+        <p>There are multiple signs and symptoms of lupus. Common signs include: fatigue, joint pain, fever, a butterfly shaped rash, sunlight sensitivity, hair and weight loss, and mouth sores. Some rarer symptoms can include: chest pain, kidney complications, heart complications, blood clots, seizures, mental difficulties, and fingers and toes tuning white or blue. Other complications from lupus can include: muscle pain, swollen lymph nodes, anemia, low platelet count, and intestinal problems. Symptoms can vary and depend on the amount of time the patient has had lupus.</p>
+        <h2>Who is at risk</h2>
+        <p>You are more at risk of contracting Lupus if you:</p>
+        <ul>
+            <li>Are female</li>
+            <li>Have a family history of Lupus</li>
+            <li>Are African American</li>
+            <li>Are Hispanic</li>
+            <li>Are Asian</li>
+        </ul>
+        <a href="https://www.cdc.gov/lupus/about/index.html" target="_blank">Click here to see the CDC official web page on Lupus</a>
+        </div>
+        <div id="image">
+            <img id= "first_image" src = "https://images.everydayhealth.com/images/seo-graphic-content-initiative/select-eh-how-lupus-affects-the-body.png?sfvrsn=c13950d2_3" alt="Signs and Symptoms of Lupus"/>
+            <img id="second_image" src = "https://sa1s3optim.patientpop.com/assets/images/provider/photos/2761357.jpg" alt="Signs and Symptoms of Lupus"/>
+        </div>
+        <button id="button" onmouseclick=(show)>Show More</button>
+        <div id="more_info">
+            <h1>Treatments</h1>
+            <p>There are several treatments for lupus including medications and lifestyle changes. Medications to treat Lupus include anti-inflamitory drugs to help reduce symptoms and control flares. Lifestyle changes include avoiding known triggers, eating a healthy diet, and physical activity. It is important to consistently keep up with treatments to avoid further damage to vital organs.</p>
+            <img id="third_image" src = "https://i0.wp.com/post.medicalnewstoday.com/wp-content/uploads/sites/3/2023/03/treatments_lupus_GettyImages1365546460_Header-1024x575.jpg?w=1155&h=1528" alt="Fresh fruits and vegtables"/>
+        </div>
+    </div>
+    </body>
+</html>
