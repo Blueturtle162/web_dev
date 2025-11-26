@@ -1,5 +1,5 @@
 <!--6th AK Finishing First Web Page-->
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF--8">
@@ -11,6 +11,11 @@
             padding:5px;
         }
         #second_image{
+            width:30vw;
+            height:45vh;
+            padding:5px;
+        }
+        #third_image{
             width:30vw;
             height:45vh;
             padding:5px;
@@ -46,8 +51,8 @@
         </style>
         <script>
                 function show(){
-                    if(more_info.style.display ==="none"){
-                    more_info.style.display="block";
+                    if(document.getElementById("more_info").style.display==="none"|| document.getElementById("more_info").style.display===""){
+                    document.getElementById("more_info").style.display="block";
                     document.getElementById("button").innerHTML = "Show Less";
                 }else{
                     document.getElementById("more_info").style.display= "none";
@@ -82,11 +87,13 @@
             <img id= "first_image" src = "https://images.everydayhealth.com/images/seo-graphic-content-initiative/select-eh-how-lupus-affects-the-body.png?sfvrsn=c13950d2_3" alt="Signs and Symptoms of Lupus"/>
             <img id="second_image" src = "https://sa1s3optim.patientpop.com/assets/images/provider/photos/2761357.jpg" alt="Signs and Symptoms of Lupus"/>
         </div>
-        <button id="button" onmouseclick=(show)>Show More</button>
+        <div>
+        <button id="button" onclick="show()">Show More</button>
         <div id="more_info">
             <h1>Treatments</h1>
             <p>There are several treatments for lupus including medications and lifestyle changes. Medications to treat Lupus include anti-inflamitory drugs to help reduce symptoms and control flares. Lifestyle changes include avoiding known triggers, eating a healthy diet, and physical activity. It is important to consistently keep up with treatments to avoid further damage to vital organs.</p>
             <img id="third_image" src = "https://i0.wp.com/post.medicalnewstoday.com/wp-content/uploads/sites/3/2023/03/treatments_lupus_GettyImages1365546460_Header-1024x575.jpg?w=1155&h=1528" alt="Fresh fruits and vegtables"/>
+        </div>
         </div>
     </div>
     </body>
