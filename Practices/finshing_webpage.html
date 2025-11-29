@@ -59,6 +59,12 @@
                     document.getElementById("button").innerHTML = "Show More";
                 }
             }
+                function change(){
+                document.getElementById("first_image").src = "https://www.verywellhealth.com/thmb/0seHgJnjgJSZgLX7eQBRAvLGTMs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lupus-symptoms1-5ad0d4801d6404003933b09f.png"
+            }
+            function changeback(){
+                document.getElementById("first_image").src = "https://images.everydayhealth.com/images/seo-graphic-content-initiative/select-eh-how-lupus-affects-the-body.png?sfvrsn=c13950d2_3"
+            }
        </script>
     
       
@@ -84,8 +90,8 @@
         <a href="https://www.cdc.gov/lupus/about/index.html" target="_blank">Click here to see the CDC official web page on Lupus</a>
         </div>
         <div id="image">
-            <img id= "first_image" src = "https://images.everydayhealth.com/images/seo-graphic-content-initiative/select-eh-how-lupus-affects-the-body.png?sfvrsn=c13950d2_3" alt="Signs and Symptoms of Lupus"/>
-            <img id="second_image" src = "https://sa1s3optim.patientpop.com/assets/images/provider/photos/2761357.jpg" alt="Signs and Symptoms of Lupus"/>
+            <img id= "first_image" onmouseover="change()" onmouseleave="changeback()" src="https://images.everydayhealth.com/images/seo-graphic-content-initiative/select-eh-how-lupus-affects-the-body.png?sfvrsn=c13950d2_3" alt="Signs and Symptoms of Lupus"/>
+            <img id="second_image" src="https://sa1s3optim.patientpop.com/assets/images/provider/photos/2761357.jpg" alt="Signs and Symptoms of Lupus"/>
         </div>
         <div>
         <button id="button" onclick="show()">Show More</button>
