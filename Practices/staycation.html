@@ -1,0 +1,72 @@
+<!--AK 6th Staycation final project-->
+<!DOCTYPE html5>
+<html lang="en">
+    <head>
+        <meta charset="UTF--8">
+       <title>Goblin Valley</title>
+       <style>
+        img{
+            width:15vw;
+            height:20vh;
+            padding:5px;
+            margin: 5px;  
+        }
+        #main{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        }
+        #button{
+            
+            width: 200px;
+            height: 50px;
+        }
+        #more_info{
+            display:none;
+        }
+       </style>
+       <script>
+        function show(){
+            if(document.getElementById("more_info").style.display==="none"|| document.getElementById("more_info").style.display===""){
+            document.getElementById("more_info").style.display="block";
+            document.getElementById("button").innerHTML = "Show Less";
+        }else{
+            document.getElementById("more_info").style.display= "none";
+            document.getElementById("button").innerHTML = "Show More";
+        }
+        function change(){
+                document.getElementById("first_image").src = ""
+            }
+            function changeback(){
+                document.getElementById("first_image").src = ""
+            }
+    }
+        </script>
+       </head>
+       <body>
+        <div id="main">
+        <div id="text">
+       <h1>Goblin Valley</h1>
+       <p>If you are taveling through Utah you must make sure to stop at Goblin valley. This state park is filled with bizzare natural rock formations, slot canyons, and stunning views. There are many hiking trails that will lead you through the park and allow you to see the unique canyons. There are also many areas designed to led visitors explore the park off trail.</p>
+       <p>Some reasons to vist Goblin Valley are:</p>
+       <ul>
+        <li>The slot canyons</li>
+        <li>Family friendly trails</li>
+        <li>Conviniently located by Utah's national parks</li>
+        <li>Great views</li>
+        <li>Stunning view of the stars</li>
+       </ul>
+       
+       </div>
+       <div id="images">
+       <img id="first_image" src="https://tracks-trails.com/wp-content/uploads/2024/12/trip_slider_goblin_valley_02.jpg">
+       <img id="second_image" src="https://i.redd.it/z86nkq2efe391.jpg">
+       <img id="third_image" src="https://danandholly.com/wp-content/uploads/2022/02/210904_Utah_1693.jpg">
+       </div>
+       </div>
+       <button id="button" onclick="show()">Show more</button>
+       <div id="more_info">
+        <p>One of the major attractions found at Gobiln valley are the three sisters. This rock formation is found near the visitors center. The formation was formed over millions of years when winds and rains chipped away at the soft sandstone. The three sisters are now an iconic formation an provide great photos.</p>
+        <img id="fourth_image" src="https://i.redd.it/425a8filoxa61.jpg">
+       </div>
+       </body>
+</html>
