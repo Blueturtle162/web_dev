@@ -19,6 +19,8 @@
             
             width: 200px;
             height: 50px;
+            padding:5px;
+            margin: 5px;
         }
         #more_info{
             display:none;
@@ -30,21 +32,22 @@
         }
        </style>
        <script>
-        function show(){
-            if(document.getElementById("more_info").style.display==="none"|| document.getElementById("more_info").style.display===""){
-            document.getElementById("more_info").style.display="block";
-            document.getElementById("button").innerHTML = "Show Less";
-        }else{
-            document.getElementById("more_info").style.display= "none";
-            document.getElementById("button").innerHTML = "Show More";
+            function show(){
+                if(document.getElementById("more_info").style.display==="none"|| document.getElementById("more_info").style.display===""){
+                document.getElementById("more_info").style.display="block";
+                document.getElementById("button").innerHTML = "Show Less";
+            }else{
+                document.getElementById("more_info").style.display= "none";
+                document.getElementById("button").innerHTML = "Show More";
+            }
         }
-        function change(){
-                document.getElementById("first_image").src = ""
+            function change(){
+                document.getElementById("third_image").src = "https://www.williamhortonphotography.com/wp-content/uploads/2017/08/Goblin-Valley-06.jpg"
             }
             function changeback(){
-                document.getElementById("first_image").src = ""
+                document.getElementById("third_image").src = "https://danandholly.com/wp-content/uploads/2022/02/210904_Utah_1693.jpg"
             }
-    }
+    
         </script>
        </head>
        <body>
@@ -63,15 +66,15 @@
        
        </div>
        <div id="images">
-       <img id="first_image" src="https://tracks-trails.com/wp-content/uploads/2024/12/trip_slider_goblin_valley_02.jpg">
-       <img id="second_image" src="https://i.redd.it/z86nkq2efe391.jpg">
-       <img id="third_image" src="https://danandholly.com/wp-content/uploads/2022/02/210904_Utah_1693.jpg">
+       <img id="first_image" src="https://tracks-trails.com/wp-content/uploads/2024/12/trip_slider_goblin_valley_02.jpg" alt="Goblin Valley photos">
+       <img id="second_image" src="https://i.redd.it/z86nkq2efe391.jpg" alt="Goblin Valley photos">
+       <img id="third_image" onmouseover="change()" onmouseleave="changeback()" src="https://danandholly.com/wp-content/uploads/2022/02/210904_Utah_1693.jpg" alt="Goblin Valley photos">
        </div>
        </div>
        <button id="button" onclick="show()">Show more</button>
        <div id="more_info">
         <p>One of the major attractions found at Gobiln valley are the three sisters. This rock formation is found near the visitors center. The formation was formed over millions of years when winds and rains chipped away at the soft sandstone. The three sisters are now an iconic formation an provide great photos.</p>
-        <img id="fourth_image" src="https://i.redd.it/425a8filoxa61.jpg">
+        <img id="fourth_image" src="https://i.redd.it/425a8filoxa61.jpg" alt="Goblin valley photos">
        </div>
        </body>
 </html>
